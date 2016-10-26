@@ -6,6 +6,6 @@
 
 
  <xsl:template match="/">
-  <xsl:copy-of select="document('biler.xml')/*"/>
+  <xsl:copy-of select="document('biler.xml')/biler/bil"/>
  </xsl:template>
 </xsl:stylesheet>
