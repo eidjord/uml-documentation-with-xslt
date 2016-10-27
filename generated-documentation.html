@@ -6,89 +6,703 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dokuementasjon av FINT-informasjonsmodell</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style>
+          body { padding-top: 50px; }
+          .sub-header { padding-bottom: 10px; border-bottom: 1px solid #eee; }
+          .navbar-fixed-top { border: 0; }
+          .sidebar { display: none; }
+          @media (min-width: 768px) { 
+            .sidebar { position: fixed; top: 51px; bottom: 0; left: 0; z-index: 1000; display: block; padding: 20px; overflow-x: hidden; overflow-y: auto; background-color: #f5f5f5; border-right: 1px solid #eee; }
+          }
+          .nav-sidebar { margin-right: -21px; margin-bottom: 20px; margin-left: -20px; }
+          .nav-sidebar > li > a { padding-right: 20px; padding-left: 20px; }
+          .nav-sidebar > .active > a,
+          .nav-sidebar > .active > a:hover,
+          .nav-sidebar > .active > a:focus { color: #fff; background-color: #428bca; }
+          .main { padding: 20px; }
+          @media (min-width: 768px) { 
+            .main { padding-right: 40px; padding-left: 40px; }
+          }
+          .main .page-header { margin-top: 0; }
+          .placeholders { margin-bottom: 30px; text-align: center; }
+          .placeholders h4 { margin-bottom: 0; }
+          .placeholder { margin-bottom: 20px; }
+          .placeholder img { display: inline-block; border-radius: 50%; }
+        </style>
   </head>
-  <body>
-    <div class="container-fluid">
+  <body><nav class="navbar navbar-inverse navbar-fixed-top"><div class="container-fluid">
+        <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">Dokumentasjon av informasjonsmodell til FINT</a></div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right"><input type="text" class="form-control" placeholder="Search..."></form>
+        </div>
+      </div></nav><div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
+            <li><a href="#package-EAPK_3D763EF0_3066_4aa9_97D7_67827101CC20">Felles</a></li>
+            <li><a href="#package-EAPK_455D668D_96AB_4dee_A0DC_12FAC7139EC2">Arbeidstaker</a></li>
+            <li><a href="#package-EAPK_5367407B_E0BC_44c6_BB31_B1021810FE4B">Skole (ikke i bruk)</a></li>
+            <li><a href="#package-EAPK_8067A0C9_1FFF_4a84_997D_89395AC6E659">Kodeverk (utkast)</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
+            <li><a href=""></a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
-          <h2>Model</h2><i></i><h2>FINT</h2><i></i><h2>Kodeverk (utkast)</h2><i></i><h3>Class: Begrepsverdi</h3><i>Definisjon av en enkelt begrepsverdi innenfor et begrep.</i><ul>
-            <li>begrepskode</li><i></i><li>begrepsverdi</li><i></i><li>begrepsbeskrivelse</li><i></i><li>validDatePeriod</li><i></i></ul>
-          <h3>Class: Begrep</h3><i>Definisjon av et begrep.</i><ul>
-            <li>begrepskode</li><i></i><li>beskrivelse</li><i></i></ul>
-          <h2>Felles</h2><i></i><h2>ISO</h2><i></i><h2>ISO 639</h2><i></i><h3>Class: Språk</h3><i></i><ul></ul>
-          <h2>ISO 3166 - Landkoder</h2><i></i><h3>Class: Landkode</h3><i></i><ul></ul>
-          <h2>Felles informasjonsmodell person enhet adresse</h2><i></i><h2>Aktør</h2><i></i><h3>Class: Kontaktinformasjon</h3><i>Informasjon som kan brukes for kontakt med en aktør</i><ul>
-            <li>epostadresse</li><i></i><li>telefonnummer</li><i></i><li>mobiltelefonummer</li><i></i><li>websted</li><i></i><li>kontakttype</li><i></i></ul>
-          <h3>Class: Aktør</h3><i>Person eller enhet vi samhandler med.</i><ul></ul>
-          <h2>Adresse</h2><i></i><h3>Class: GeografiskAdresse</h3><i>Adresse til en aktør</i><ul>
-            <li>gateadresse</li><i></i><li>postnummer</li><i></i><li>poststed</li><i></i><li>land</li><i></i></ul>
-          <h2>Enhet</h2><i></i><h3>Class: Enhet</h3><i>Alle hovedenheter, underenheter og organisasjonsledd som er identifisert med et organisasjonsnummer
+          <h1 class="page-header">Elementer i informasjonsmodellen</h1>
+          <div id="package-EAPK_7D84B04B_025D_46fa_B011_58B791723397" style="padding-top: 50px"></div>
+          <h2>Model</h2><i></i><div id="package-EAPK_CF051141_D9AF_4231_A3D9_5907E487A8DD" style="padding-top: 50px"></div>
+          <h2>FINT</h2><i></i><div id="package-EAPK_8067A0C9_1FFF_4a84_997D_89395AC6E659" style="padding-top: 50px"></div>
+          <h2>Kodeverk (utkast)</h2><i></i><h3>Begrepsverdi (class)</h3><i>Definisjon av en enkelt begrepsverdi innenfor et begrep.</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>begrepskode</td>
+                <td><em>For eksempel ORG, ANSV, etc. Samsvarer med kodeliste.</em></td>
+              </tr>
+              <tr>
+                <td>begrepsverdi</td>
+                <td><em>For eksempel en verdi på en bestemt enhet i organisasjonshierarkiet: "354"</em></td>
+              </tr>
+              <tr>
+                <td>begrepsbeskrivelse</td>
+                <td><em>For eksempel en beskrivelse til en bestemt enhet i organisasjonshierarkiet: "Avdeling for Design og håndverk"</em></td>
+              </tr>
+              <tr>
+                <td>validDatePeriod</td>
+                <td><em>Tidsperiode for når koden er gydlig/aktiv.</em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Begrep (class)</h3><i>Definisjon av et begrep.</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>begrepskode</td>
+                <td><em>En kode for en bestemt kode-/begrepsliste. Kan ha følgende verdier: ARBEIDSSTED, ORG, ANSV.</em></td>
+              </tr>
+              <tr>
+                <td>beskrivelse</td>
+                <td><em>Tekst som beskriver hva denne kode-/begrepslisten inneholder.</em></td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="package-EAPK_3D763EF0_3066_4aa9_97D7_67827101CC20" style="padding-top: 50px"></div>
+          <h2>Felles</h2><i></i><div id="package-EAPK_024D708A_A775_467f_8320_556FD674F915" style="padding-top: 50px"></div>
+          <h2>ISO</h2><i></i><div id="package-EAPK_2AC6BB8B_E29F_40a5_8257_6769B05A8F9E" style="padding-top: 50px"></div>
+          <h2>ISO 639</h2><i></i><h3>Språk (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div id="package-EAPK_70006168_CDF5_4868_9F08_22BF9A953678" style="padding-top: 50px"></div>
+          <h2>ISO 3166 - Landkoder</h2><i></i><h3>Landkode (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div id="package-EAPK_7F5B69A6_88B6_485a_A3BC_0776BB3E9C61" style="padding-top: 50px"></div>
+          <h2>Felles informasjonsmodell person enhet adresse</h2><i></i><div id="package-EAPK_6197D9C5_AA1E_417a_84C7_D71516898AB3" style="padding-top: 50px"></div>
+          <h2>Aktør</h2><i></i><h3>Kontaktinformasjon (class)</h3><i>Informasjon som kan brukes for kontakt med en aktør</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>epostadresse</td>
+                <td><em>Navngitt elektronisk adresse for mottak av e-post</em></td>
+              </tr>
+              <tr>
+                <td>telefonnummer</td>
+                <td><em>Tallkode som telenettet bruker for å få fram teletrafikk til riktig adressat.</em></td>
+              </tr>
+              <tr>
+                <td>mobiltelefonummer</td>
+                <td><em>Person sitt mobiltelefonnummer ihht norsk nummerplan for telefoni (E.164).
 
-Merknad: Forslag til definisjon med utgangspunkt i Enhetsregisteret</i><ul>
-            <li>organisasjonsnummer</li><i></i><li>navn</li><i></i><li>organisasjonsform</li><i></i><li>næringskode</li><i></i></ul>
-          <h2>Identifikasjon</h2><i></i><h3>Class: Periode</h3><i>Tidsperiode (fra- og tildato).</i><ul>
-            <li>start</li><i></i><li>slutt</li><i></i></ul>
-          <h3>Class: Identifikator</h3><i>En kombinasjon av tegn eller og/eller bokstaver som identifiserer en aktør eller objekt innenfor et sett av aktører eller objekter</i><ul>
-            <li>identifikatorverdi</li><i></i><li>identifikatortype</li><i></i><li>utstedtdato</li><i></i><li>utstedtAvAutoritet</li><i></i><li>gyldighetsperiode</li><i></i></ul>
+Merknad:   
+8 siffer, evt. flere siffer dersom første to siffer er utenlandsprefix 00 eller “+”.</em></td>
+              </tr>
+              <tr>
+                <td>websted</td>
+                <td><em>Nettsted knyttet til person</em></td>
+              </tr>
+              <tr>
+                <td>kontakttype</td>
+                <td><em>privat eller jobb kontaktinformasjon</em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Aktør (class)</h3><i>Person eller enhet vi samhandler med.</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div id="package-EAPK_ECCE1BB9_CF3D_465a_B7BB_491033D1BAF4" style="padding-top: 50px"></div>
+          <h2>Adresse</h2><i></i><h3>GeografiskAdresse (class)</h3><i>Adresse til en aktør</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>gateadresse</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>postnummer</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>poststed</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>land</td>
+                <td><em></em></td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="package-EAPK_9ED5A1FB_89AC_4dac_9D1F_F16A171DF2F0" style="padding-top: 50px"></div>
+          <h2>Enhet</h2><i></i><h3>Enhet (class)</h3><i>Alle hovedenheter, underenheter og organisasjonsledd som er identifisert med et organisasjonsnummer
+
+Merknad: Forslag til definisjon med utgangspunkt i Enhetsregisteret</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>organisasjonsnummer</td>
+                <td><em>Nisifret nummer som entydig identifiserer enheter i Enhetsregisteret</em></td>
+              </tr>
+              <tr>
+                <td>navn</td>
+                <td><em>Navn på enhet som er registrert i Enhetsregisteret</em></td>
+              </tr>
+              <tr>
+                <td>organisasjonsform</td>
+                <td><em>Inndeling av enheter ut fra hvordan disse er organisert (eierform, ansvarsforhold, regelverk og lignende)</em></td>
+              </tr>
+              <tr>
+                <td>næringskode</td>
+                <td><em>Femsifret kode som tildeles på bakgrunn av enhetens virksomhet/bransje. Bygger på EU sin næringsstandard (NACE) som består av fire siffer. Det femte sifferet er nasjonalt nivå
+</em></td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="package-EAPK_2CD1074B_E884_46cc_947E_50E732321447" style="padding-top: 50px"></div>
+          <h2>Identifikasjon</h2><i></i><h3>Periode (class)</h3><i>Tidsperiode (fra- og tildato).</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>start</td>
+                <td><em>Fradato</em></td>
+              </tr>
+              <tr>
+                <td>slutt</td>
+                <td><em>Tildato</em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Identifikator (class)</h3><i>En kombinasjon av tegn eller og/eller bokstaver som identifiserer en aktør eller objekt innenfor et sett av aktører eller objekter</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>identifikatorverdi</td>
+                <td><em>En konkret kombinasjonen av tegn og/eller bokstaver som utgjør en bestemt identifikator
+
+For eksempel et fødselsnummer, ansattnummer, etc.</em></td>
+              </tr>
+              <tr>
+                <td>identifikatortype</td>
+                <td><em>En kategori av identifikatorer. 
+
+Identifikatortyper:
+- fødselsnummer (kan også inneholde d-nummer)
+- ansattnummer (ressursnummer i Agresso, lønnsnummer i Bluegarden, Ansattnr i Visma Enterprise)
+- ...
+- ...</em></td>
+              </tr>
+              <tr>
+                <td>utstedtdato</td>
+                <td><em>Datoen en gitt identifikator ble utstedt</em></td>
+              </tr>
+              <tr>
+                <td>utstedtAvAutoritet</td>
+                <td><em>Myndigheten, i Norge eller utlandet, som har utstedt en gitt identifikator. 
+
+For eksempel om det er snakk om ansattnummer, kan det være "Agresso i Vest-Agder fylkeskommune"</em></td>
+              </tr>
+              <tr>
+                <td>gyldighetsperiode</td>
+                <td><em>Perioden, gitt i form av fra-og-med-dato og til-dato, som en gitt identifikator er gyldig.</em></td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="package-EAPK_973455D4_5869_4ded_9E07_43021B84E27F" style="padding-top: 50px"></div>
           <h2>Person</h2><i>Author:Tor Kjetil.
 Created:24.08.16 11:11.
 Title:.
 Comment:.
-</i><h3>Class: Personnavn</h3><i>Navn på person</i><ul>
-            <li>fornavn</li><i></i><li>etternavn</li><i></i></ul>
-          <h3>Class: Person</h3><i>Fysiske personer</i><ul>
-            <li>fulltNavn</li><i></i><li>navn</li><i></i><li>kjønn</li><i></i><li>statsborgerskap</li><i></i><li>fødselsdato</li><i></i><li>sivilstand</li><i></i></ul>
-          <h3>Class: Kjønn</h3><i>Liste over verdier for kjønn.</i><ul>
-            <li>kvinne</li><i></i><li>mann</li><i></i><li>ubestemt</li><i></i><li>ukjent</li><i></i></ul>
-          <h3>Class: Sivilstand</h3><i>Liste over verdier for sivilstand.</i><ul>
-            <li>ugift</li><i></i><li>gift</li><i></i><li>enkeEllerEnkemann</li><i></i><li>skilt</li><i></i><li>separert</li><i></i><li>registrertPartner</li><i></i><li>separertPartner</li><i></i><li>skiltPartner</li><i></i><li>gjenlevendePartner</li><i></i><li>uoppgitt</li><i></i></ul>
-          <h2>Arbeidstaker</h2><i></i><h3>Class: Arbeidstaker</h3><i>Alle arbeidstakere i HR-systemet. 
+</i><h3>Personnavn (class)</h3><i>Navn på person</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>fornavn</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>etternavn</td>
+                <td><em></em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Person (class)</h3><i>Fysiske personer</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>fulltNavn</td>
+                <td><em>Fullt utskrevet navn
+
+For eksempel "Ola Normann".</em></td>
+              </tr>
+              <tr>
+                <td>navn</td>
+                <td><em>Navn på person oppdelt i fornavn, mellomnavn(?) og etternavn.</em></td>
+              </tr>
+              <tr>
+                <td>kjønn</td>
+                <td><em>Kjønn for person.
+
+Merknad: Sosialt kjønn? Se ISO 5218 - Representation of Human Sexes. </em></td>
+              </tr>
+              <tr>
+                <td>statsborgerskap</td>
+                <td><em>Landkode. Rettslig bånd mellom en person og en stat og består av både plikter og rettigheter. </em></td>
+              </tr>
+              <tr>
+                <td>fødselsdato</td>
+                <td><em>Dato for fødsel</em></td>
+              </tr>
+              <tr>
+                <td>sivilstand</td>
+                <td><em>Persons stilling i forhold til ekteskap eller partnerskap</em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Kjønn (class)</h3><i>Liste over verdier for kjønn.</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>kvinne</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>mann</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>ubestemt</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>ukjent</td>
+                <td><em></em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Sivilstand (class)</h3><i>Liste over verdier for sivilstand.</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ugift</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>gift</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>enkeEllerEnkemann</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>skilt</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>separert</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>registrertPartner</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>separertPartner</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>skiltPartner</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>gjenlevendePartner</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>uoppgitt</td>
+                <td><em></em></td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="package-EAPK_455D668D_96AB_4dee_A0DC_12FAC7139EC2" style="padding-top: 50px"></div>
+          <h2>Arbeidstaker</h2><i></i><h3>Arbeidstaker (class)</h3><i>Alle arbeidstakere i HR-systemet. 
 
 Inneholder "ordinære" ansatte i fast og vikariat, i tillegg til oppdragstakere (politikere, ressurser med timelønn, sensorer, etc).
 
-Inneholder ikke leverandørrepresentant (eksterne konsulenter etc).</i><ul></ul>
-          <h3>Class: Stilling</h3><i></i><ul>
-            <li>avdeling</li><i></i><li>funksjon</li><i></i><li>grunnlonn</li><i></i><li>organisasjon</li><i></i><li>status</li><i></i><li>stillingskode</li><i></i><li>stillingsnummer</li><i></i><li>stillingsprosent</li><i></i><li>stillingstittel</li><i></i></ul>
-          <h2>Skole (ikke i bruk)</h2><i></i><h3>Class: Medlemsskap</h3><i></i><ul>
-            <li>endret</li><i></i><li>starttidspunkt</li><i></i><li>slutttidspunkt</li><i></i></ul>
-          <h3>Class: Lærerstilling</h3><i></i><ul>
-            <li>systemIdentifikator</li><i></i></ul>
-          <h3>Class: Gruppe</h3><i></i><ul>
-            <li>grepkode</li><i></i><li>beskrivelse</li><i></i><li>gyldighetsperiode</li><i></i><li>kontaktinformasjon</li><i></i></ul>
-          <h3>Class: Gyldighetsperiode</h3><i></i><ul>
-            <li>beskrivelse</li><i></i><li>starttidspunkt</li><i></i><li>slutttidspunkt</li><i></i></ul>
-          <h3>Class: Aktivstatus</h3><i></i><ul>
-            <li>aktiv</li><i></i><li>inaktiv</li><i></i></ul>
-          <h3>Class: Elev</h3><i></i><ul>
-            <li>systemIdentifikator</li><i></i><li>studentnummer</li><i></i><li>aktivstatus</li><i></i><li>elevstatus</li><i></i><li>foretrukketSpråkform</li><i></i><li>morsmål</li><i></i><li>bilde</li><i></i></ul>
-          <h3>Class: Elevstatus</h3><i>heltid/deltid/privatist/voksen/utveksl. i utlandet/utveksl. i Norge</i><ul>
-            <li>heltid</li><i></i><li>deltid</li><i></i><li>privatist</li><i></i><li>voksen</li><i></i><li>utvekslingUtlandet</li><i></i><li>utvekslingNorge</li><i></i></ul>
-          <h3>Class: Foresatt</h3><i></i><ul></ul>
-          <h3>Class: Virksomhet</h3><i></i><ul>
-            <li>kommunenummer</li><i></i><li>fylkesnummer</li><i></i></ul>
-          <h3>Class: Skole</h3><i></i><ul>
-            <li>skolenr</li><i></i></ul>
+Inneholder ikke leverandørrepresentant (eksterne konsulenter etc).</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <h3>Stilling (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>avdeling</td>
+                <td><em>Koden for tilhørighet til avdeling. 
+
+For eksempel koden til "Avdeling for Helse og mijlø".</em></td>
+              </tr>
+              <tr>
+                <td>funksjon</td>
+                <td><em>Kode for relasjon til funksjon. 
+
+For eksempel koden til "Studiespesialisering" eller "PEDAGOGISK LEDELSE OG PEDAGOGISKE FELLESUTGIFTER&lt;b&gt;".&lt;/b&gt;</em></td>
+              </tr>
+              <tr>
+                <td>grunnlonn</td>
+                <td><em>Årslønn/grunnllønn i 100 % stilling.</em></td>
+              </tr>
+              <tr>
+                <td>organisasjon</td>
+                <td><em>Kode for relasjon til organisasjonstruktur. 
+
+ Tilsvarer Arbeidssted i HR-system, mens VFS kaller dette for Ansvar og beskriver det med: "Type 2 = Ansvar, benyttes til å plassere den ansatte på riktig skole".
+
+For eksempel kode for "Bjerke videregående skole".</em></td>
+              </tr>
+              <tr>
+                <td>status</td>
+                <td><em>Beskriver om stillingen er aktiv, utløpt eller slettet. 
+
+Gyldige verdier er: AKTIV, ...</em></td>
+              </tr>
+              <tr>
+                <td>stillingskode</td>
+                <td><em>En fire- eller sekssifret stillingskode. Firesiffret kodeliste fra KS. Kan være utvidet i tillegg med to siffer. De to siste er egentilpasset.</em></td>
+              </tr>
+              <tr>
+                <td>stillingsnummer</td>
+                <td><em>En unik id/løpenummer for stilling til en ansatt.</em></td>
+              </tr>
+              <tr>
+                <td>stillingsprosent</td>
+                <td><em>Angitt stillingsstørrelse i prossent. Angitt fra 0 til 100.</em></td>
+              </tr>
+              <tr>
+                <td>stillingstittel</td>
+                <td><em>Arbeidstakers stillingstittel i gjeldende stilling.</em></td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="package-EAPK_5367407B_E0BC_44c6_BB31_B1021810FE4B" style="padding-top: 50px"></div>
+          <h2>Skole (ikke i bruk)</h2><i></i><h3>Medlemsskap (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>endret</td>
+                <td><em>Tidspunkt medlemskap/status ble sist ble endret</em></td>
+              </tr>
+              <tr>
+                <td>starttidspunkt</td>
+                <td><em>Gyldighetsperiode for medlemskap for hvert medlem</em></td>
+              </tr>
+              <tr>
+                <td>slutttidspunkt</td>
+                <td><em>Gyldighetsperiode for medlemskap for hvert medlem</em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Lærerstilling (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>systemIdentifikator</td>
+                <td><em>systemIdentifikator i skole administrativt system (SAS)</em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Gruppe (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>grepkode</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>beskrivelse</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>gyldighetsperiode</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>kontaktinformasjon</td>
+                <td><em></em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Gyldighetsperiode (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>beskrivelse</td>
+                <td><em>Tekstlig beskrivelse for eksempel ’2007/2008’, ’V2008’</em></td>
+              </tr>
+              <tr>
+                <td>starttidspunkt</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>slutttidspunkt</td>
+                <td><em></em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Aktivstatus (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>aktiv</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>inaktiv</td>
+                <td><em></em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Elev (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>systemIdentifikator</td>
+                <td><em>systemIdentifikator i skole administrativt system (SAS)</em></td>
+              </tr>
+              <tr>
+                <td>studentnummer</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>aktivstatus</td>
+                <td><em>Aktivstatus på personen (aktiv/inaktiv)</em></td>
+              </tr>
+              <tr>
+                <td>elevstatus</td>
+                <td><em>Elevstatus (heltid/deltid/privatist/voksen/utveksl. i utlandet/utveksl. i Norge)</em></td>
+              </tr>
+              <tr>
+                <td>foretrukketSpråkform</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>morsmål</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>bilde</td>
+                <td><em></em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Elevstatus (class)</h3><i>heltid/deltid/privatist/voksen/utveksl. i utlandet/utveksl. i Norge</i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>heltid</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>deltid</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>privatist</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>voksen</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>utvekslingUtlandet</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>utvekslingNorge</td>
+                <td><em></em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Foresatt (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <h3>Virksomhet (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>kommunenummer</td>
+                <td><em></em></td>
+              </tr>
+              <tr>
+                <td>fylkesnummer</td>
+                <td><em></em></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Skole (class)</h3><i></i><table class="table">
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>skolenr</td>
+                <td><em>VIGOnummeret er et skolenummer som brukes i en oversikt over alle ungdoms- og videeregående skoler i Norge. Skolenummeret er femsifret, begynner med fylkesnummer og fortsetter med tre siffer som representerer skolen. Hver skole har et unikt VIGOnummer.</em></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script></body>
