@@ -1,0 +1,95 @@
+﻿<html lang="en" xmlns:UML="omg.org/UML1.3">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dokuementasjon av FINT-informasjonsmodell</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+          <h2>Model</h2><i></i><h2>FINT</h2><i></i><h2>Kodeverk (utkast)</h2><i></i><h3>Class: Begrepsverdi</h3><i>Definisjon av en enkelt begrepsverdi innenfor et begrep.</i><ul>
+            <li>begrepskode</li><i></i><li>begrepsverdi</li><i></i><li>begrepsbeskrivelse</li><i></i><li>validDatePeriod</li><i></i></ul>
+          <h3>Class: Begrep</h3><i>Definisjon av et begrep.</i><ul>
+            <li>begrepskode</li><i></i><li>beskrivelse</li><i></i></ul>
+          <h2>Felles</h2><i></i><h2>ISO</h2><i></i><h2>ISO 639</h2><i></i><h3>Class: Språk</h3><i></i><ul></ul>
+          <h2>ISO 3166 - Landkoder</h2><i></i><h3>Class: Landkode</h3><i></i><ul></ul>
+          <h2>Felles informasjonsmodell person enhet adresse</h2><i></i><h2>Aktør</h2><i></i><h3>Class: Kontaktinformasjon</h3><i>Informasjon som kan brukes for kontakt med en aktør</i><ul>
+            <li>epostadresse</li><i></i><li>telefonnummer</li><i></i><li>mobiltelefonummer</li><i></i><li>websted</li><i></i><li>kontakttype</li><i></i></ul>
+          <h3>Class: Aktør</h3><i>Person eller enhet vi samhandler med.</i><ul></ul>
+          <h2>Adresse</h2><i></i><h3>Class: GeografiskAdresse</h3><i>Adresse til en aktør</i><ul>
+            <li>gateadresse</li><i></i><li>postnummer</li><i></i><li>poststed</li><i></i><li>land</li><i></i></ul>
+          <h2>Enhet</h2><i></i><h3>Class: Enhet</h3><i>Alle hovedenheter, underenheter og organisasjonsledd som er identifisert med et organisasjonsnummer
+
+Merknad: Forslag til definisjon med utgangspunkt i Enhetsregisteret</i><ul>
+            <li>organisasjonsnummer</li><i></i><li>navn</li><i></i><li>organisasjonsform</li><i></i><li>næringskode</li><i></i></ul>
+          <h2>Identifikasjon</h2><i></i><h3>Class: Periode</h3><i>Tidsperiode (fra- og tildato).</i><ul>
+            <li>start</li><i></i><li>slutt</li><i></i></ul>
+          <h3>Class: Identifikator</h3><i>En kombinasjon av tegn eller og/eller bokstaver som identifiserer en aktør eller objekt innenfor et sett av aktører eller objekter</i><ul>
+            <li>identifikatorverdi</li><i></i><li>identifikatortype</li><i></i><li>utstedtdato</li><i></i><li>utstedtAvAutoritet</li><i></i><li>gyldighetsperiode</li><i></i></ul>
+          <h2>Person</h2><i>Author:Tor Kjetil.
+Created:24.08.16 11:11.
+Title:.
+Comment:.
+</i><h3>Class: Personnavn</h3><i>Navn på person</i><ul>
+            <li>fornavn</li><i></i><li>etternavn</li><i></i></ul>
+          <h3>Class: Person</h3><i>Fysiske personer</i><ul>
+            <li>fulltNavn</li><i></i><li>navn</li><i></i><li>kjønn</li><i></i><li>statsborgerskap</li><i></i><li>fødselsdato</li><i></i><li>sivilstand</li><i></i></ul>
+          <h3>Class: Kjønn</h3><i>Liste over verdier for kjønn.</i><ul>
+            <li>kvinne</li><i></i><li>mann</li><i></i><li>ubestemt</li><i></i><li>ukjent</li><i></i></ul>
+          <h3>Class: Sivilstand</h3><i>Liste over verdier for sivilstand.</i><ul>
+            <li>ugift</li><i></i><li>gift</li><i></i><li>enkeEllerEnkemann</li><i></i><li>skilt</li><i></i><li>separert</li><i></i><li>registrertPartner</li><i></i><li>separertPartner</li><i></i><li>skiltPartner</li><i></i><li>gjenlevendePartner</li><i></i><li>uoppgitt</li><i></i></ul>
+          <h2>Arbeidstaker</h2><i></i><h3>Class: Arbeidstaker</h3><i>Alle arbeidstakere i HR-systemet. 
+
+Inneholder "ordinære" ansatte i fast og vikariat, i tillegg til oppdragstakere (politikere, ressurser med timelønn, sensorer, etc).
+
+Inneholder ikke leverandørrepresentant (eksterne konsulenter etc).</i><ul></ul>
+          <h3>Class: Stilling</h3><i></i><ul>
+            <li>avdeling</li><i></i><li>funksjon</li><i></i><li>grunnlonn</li><i></i><li>organisasjon</li><i></i><li>status</li><i></i><li>stillingskode</li><i></i><li>stillingsnummer</li><i></i><li>stillingsprosent</li><i></i><li>stillingstittel</li><i></i></ul>
+          <h2>Skole (ikke i bruk)</h2><i></i><h3>Class: Medlemsskap</h3><i></i><ul>
+            <li>endret</li><i></i><li>starttidspunkt</li><i></i><li>slutttidspunkt</li><i></i></ul>
+          <h3>Class: Lærerstilling</h3><i></i><ul>
+            <li>systemIdentifikator</li><i></i></ul>
+          <h3>Class: Gruppe</h3><i></i><ul>
+            <li>grepkode</li><i></i><li>beskrivelse</li><i></i><li>gyldighetsperiode</li><i></i><li>kontaktinformasjon</li><i></i></ul>
+          <h3>Class: Gyldighetsperiode</h3><i></i><ul>
+            <li>beskrivelse</li><i></i><li>starttidspunkt</li><i></i><li>slutttidspunkt</li><i></i></ul>
+          <h3>Class: Aktivstatus</h3><i></i><ul>
+            <li>aktiv</li><i></i><li>inaktiv</li><i></i></ul>
+          <h3>Class: Elev</h3><i></i><ul>
+            <li>systemIdentifikator</li><i></i><li>studentnummer</li><i></i><li>aktivstatus</li><i></i><li>elevstatus</li><i></i><li>foretrukketSpråkform</li><i></i><li>morsmål</li><i></i><li>bilde</li><i></i></ul>
+          <h3>Class: Elevstatus</h3><i>heltid/deltid/privatist/voksen/utveksl. i utlandet/utveksl. i Norge</i><ul>
+            <li>heltid</li><i></i><li>deltid</li><i></i><li>privatist</li><i></i><li>voksen</li><i></i><li>utvekslingUtlandet</li><i></i><li>utvekslingNorge</li><i></i></ul>
+          <h3>Class: Foresatt</h3><i></i><ul></ul>
+          <h3>Class: Virksomhet</h3><i></i><ul>
+            <li>kommunenummer</li><i></i><li>fylkesnummer</li><i></i></ul>
+          <h3>Class: Skole</h3><i></i><ul>
+            <li>skolenr</li><i></i></ul>
+        </div>
+      </div>
+    </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script></body>
+</html>
