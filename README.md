@@ -1,5 +1,5 @@
-# xslt-test
+# uml-documentation-with-xslt
 
-https://raw.githack.com/eidjord/xslt-test/master/documentation.xml
+[Example documentation](https://rawcdn.githack.com/eidjord/uml-documentation-with-xslt/master/Documentation/fint-documentation.xml) (only tested in Google Chrome)
 
-https://rawgit.com/eidjord/xslt-test/master/documentation.xml
+Uses raw.githack.com or rawgit.com to present the documentation.
